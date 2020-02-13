@@ -20,3 +20,5 @@ Store all the names of PC parts and prices as a notepad file.
 
 Upcoming Features:
 To store parts and prices as excel file.
+
+NOTE: For loop was added just for debugging puporses, it is not required and will be shortened in the future.
