@@ -23,4 +23,8 @@ You can store the Parts and prices as an excel sheet, by default it will be name
 Be sure to rename the excel file to something else before trying to save again as an excel file.
 Ability to name the excel sheet to anything you want will be added later on.
 
+Future Updates:
+Ability to name the PC.
+Addition of Optional SSD field and Monitor field, to calculate costs including the SSD and monitor. 
+
 NOTE: For loop was added just for debugging puporses, it is not required and will be shortened in the future.
