@@ -318,11 +318,12 @@ def save_as_excel():
         messagebox.showerror("Error", "Fill in atleast one field and click on 'show' once to save as excel file")
     else:
         file_excel = filedialog.asksaveasfile(initialdir = 'C:/users/eradi/Documents',title = "Save as",defaultextension = ".xlsx" ,filetypes = (("excel file","*.xlsx"),("all files","*.*")))
-        df = pd.DataFrame(parts_dict)
+
        # writer = pd.ExcelWriter('{}.xlsx'.format(file_excel), engine='xlsxwriter')
        # df.to_excel(writer, sheet_name='Sheet1')
        # writer.save()
-        df.to_excel('C:\\users\\eradi\\Documents\\{}.xlsx'.format(file_excel),sheet_name='sheet_1')
+        df.to_excel('C:\\users\\eradi\\Documents\\PC.xlsx',sheet_name='sheet_1')
+        messagebox.showinfo("Success","Successful, Saved to documents folder as 'PC'")
 
 
 
@@ -365,8 +366,8 @@ clear.grid(row = 8,column = 1)
 save = tk.Button(root, text = 'Save PC parts and prices as text file', command = save_it)
 save.grid(row = 9,column = 1)
 root.protocol('WM_DELETE_WINDOW',close)
-#excel = tk.Button(root, text = 'Save as Excel File',command = save_as_excel)
-#excel.grid(row = 9,column = 2)
+excel = tk.Button(root, text = 'Save as Excel File',command = save_as_excel)
+excel.grid(row = 9,column = 2)
 
 #progress bar
 #pg = Progressbar(root, length = 200, orient = 'horizontal',maximum = 60,value = 0,mode = 'determinate')
