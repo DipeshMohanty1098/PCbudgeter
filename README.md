@@ -18,7 +18,9 @@ Notification when completed.
 
 Store all the names of PC parts and prices as a notepad file. 
 
-Upcoming Features:
-To store parts and prices as excel file.
+Update:
+You can store the Parts and prices as an excel sheet, by default it will be named as "pc.xlsx" in the documents folder.
+Be sure to rename the excel file to something else before trying to save again as an excel file.
+Ability to name the excel sheet to anything you want will be added later on.
 
 NOTE: For loop was added just for debugging puporses, it is not required and will be shortened in the future.
